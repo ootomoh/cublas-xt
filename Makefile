@@ -13,7 +13,7 @@ $(BIN): $(OBJS)
 .SUFFIXES: .o .cu .cpp
 
 .cu.cpp:
-	$(NVCC) --cuda $< -o $@
+	$(NVCC) $(NVCCFLAGS) --cuda $< -o $@
 
 $(OBJDIR)/%.o: %.cpp
 	$(CXX) $(CXXFLAGS) $< -c -o $@
