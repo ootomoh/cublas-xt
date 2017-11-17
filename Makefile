@@ -1,5 +1,5 @@
 NVCC=nvcc
-NVCCFLAGS= -arch=sm_60 -std=c++11 -lcublas
+#NVCCFLAGS= -arch=sm_60 -std=c++11 -lcublas
 NVCCFLAGS= -arch=sm_60 -std=c++11 -lcublas -D__CUBLAS_XT__
 CXX=g++
 CXXFLAGS=-std=c++11
