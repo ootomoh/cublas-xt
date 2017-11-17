@@ -1,4 +1,5 @@
 .*.swp
 exec*
+exec_xt
 obj/*.o
 cublasxt.*
