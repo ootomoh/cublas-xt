@@ -75,6 +75,6 @@ int main(){
 #else
 	std::cout<<"cuBLAS mode"<<std::endl;
 #endif
-	for(int i=4;i<16;i++)
+	for(int i=4;i<15;i++)
 		testSgemm(1<<i);
 }
