@@ -1,7 +1,0 @@
-16 x 16
-cublasSgemm : 6.76434 ms
-32 x 32
-cublasSgemm : 63.5184 ms
-64 x 64
-cublasSgemm : 513.465 ms
-128 x 128
