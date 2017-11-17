@@ -1,4 +1,4 @@
 .*.swp
-exec
+exec*
 obj/*.o
 cublasxt.*
