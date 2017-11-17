@@ -44,7 +44,7 @@ void testSgemm(int dim){
 	CUBLAS_HANDLE_ERROR( cublasXtCreate( &cublas ));
 	int devices[] = {0,1,2,3};
 	CUBLAS_HANDLE_ERROR(cublasXtDeviceSelect(cublas,1,devices));
-	CUBLAS_HANDLE_ERROR(cublasXtSetBlockDim(cublas,2) );
+	CUBLAS_HANDLE_ERROR(cublasXtSetBlockDim(cublas,dim) );
 #endif
 	cudaEvent_t start,stop;
 	float elapsed_time;
