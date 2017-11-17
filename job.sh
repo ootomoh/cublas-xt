@@ -10,5 +10,6 @@ module load cuda
 #cd ${PBS_O_WORKDIR}
 
 ./exec
+./exec_xt
 #./sgemm
 #./hgemm

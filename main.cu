@@ -70,6 +70,11 @@ void testSgemm(int dim){
 }
 
 int main(){
+#ifdef __CUBLAS_XT__
+	std::cout<<"cuBLAS-XT mode"<<std::endl;
+#else
+	std::cout<<"cuBLAS mode"<<std::endl;
+#endif
 	for(int i=4;i<16;i++)
 		testSgemm(1<<i);
 }
